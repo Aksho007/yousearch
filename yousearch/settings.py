@@ -54,7 +54,7 @@ MIDDLEWARE = [
     
   ]
 
-ROOT_URLCONF = 'djangolearn.urls'
+ROOT_URLCONF = 'yousearch.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'djangolearn.wsgi.application'
+WSGI_APPLICATION = 'yousearch.wsgi.application'
 
 
 # Database
@@ -132,7 +132,7 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_ROOT = BASE_DIR / 'static/images'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles'#2c2d32
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
