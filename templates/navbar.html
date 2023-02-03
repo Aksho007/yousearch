@@ -1,0 +1,29 @@
+{% comment %} <h1>Logo</h1>
+<a href= "/">Home</a>
+<a href= "{% url 'create-projects' %}">Add Project</a>
+<hr>  {% endcomment %}
+
+{% load static %}
+
+<header class="header">
+    <div class="container container--narrow">
+      <a href="/" class="header__logo">
+        <img src="{% static 'images/acmlogo.png' %}" alt="Acmlogo" />
+      </a>
+      <nav class="header__nav">
+        <input type="checkbox" id="responsive-menu" />
+        <label for="responsive-menu" class="toggle-menu">
+          <span>Menu</span>
+          <div class="toggle-menu__lines"></div>
+        </label>
+        <ul class="header__menu">
+          <li class="header__menuItem"><a href="#">Students</a></li>
+          <li class="header__menuItem"><a href="{% url 'projects' %}">Projects</a></li>
+          <li class="header__menuItem"><a href="#">Inbox</a></li>
+          <li class="header__menuItem"><a href="#">My Account</a></li>
+          <li class="header__menuItem"><a href="{% url 'create-projects' %}" class="btn btn--sub">Add Project</a></li>
+          {% comment %} <li class="header__menuItem"><a href="#" class="btn btn--sub">Login/Sign Up</a></li> {% endcomment %}
+        </ul>
+      </nav>
+    </div>
+  </header>
