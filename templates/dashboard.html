@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Firstproject</title>
+    <link rel='stylesheet' type='text/css' media = 'screen' href='{% static "style/main.css" %}'>
+
+    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" />
+    <!-- Mumble UI -->
+    <link rel="stylesheet" href="{% static 'uikit/styles/uikit.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'style/app.css' %} " />
+    <style>
+        
+    </style>
+<body>
+
+    {% include 'navbar.html' %}
+
+    {% block content %}
+     
+    {% endblock content %}
+
+</body>
+</head>
+</html>    

@@ -1,4 +1,4 @@
-{% extends 'main.html' %}
+{% extends 'dashboard.html' %}
 {% load static %}
 {% block content %}
 
@@ -8,6 +8,7 @@
         <div class="hero-section__box">
           <h2>All <span>Projects</span></h2>
         </div>
+        <li class="header__menuItem"><a href="{% url 'create-projects' %}" class="btn btn--sub">Add Project</a></li>
 
         {% comment %} <div class="hero-section__search">
           <form class="form" action="#" method="get">
@@ -34,7 +35,7 @@
                 <img class="project__thumbnail" src="{{project.imageURL}}" alt="project thumbnail" />
                 <div class="card__body">
                   <h3 class="project__title">{{project.title}}</h3>
-                  <p><a class="project__author" href="">By Dennis Ivanov</a></p>
+                  <p><a class="project__author" href="">lorem</a></p>
                   <p class="project--rating">
                     <span style="font-weight: bold;">{{project.vote_ratio}}</span> Positive
                     Feedback ({{project.vote_total}} Votes)

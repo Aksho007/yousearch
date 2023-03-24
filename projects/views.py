@@ -14,6 +14,9 @@ def projects(request):
     return render(request, 'projects/projects.html', context)
 
 def project(request, pk):
+    if request.method == "POST":
+        print(request.POST)
+    
     projectObj = Project.objects.get(id=pk)
     context = {'project': projectObj}
     return render(request,'projects/single-project.html',context)  
